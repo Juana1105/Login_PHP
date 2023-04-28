@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      body{
+        height: 100%; 
+        background-color: #f0b4b4; 
+      }
+      form{  
+        width: 460px; 
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;  
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        background-color: #7f6182; 
+        padding-left: 30px; 
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      input{
+        background-color: #fbfbfb; 
+        width: 408px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #e79ad5; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      label{
+        display: block; 
+        float: center;  
+      }
+              
+      input[type="submit"],input[type="reset"]{
+        height: 45px; 
+        padding-left: 5px;
+        padding-right: 5px;   
+        margin-bottom: 20px; 
+        margin-top: 10px;   
+        text-transform: uppercase;
+        background-color: #c03a6b; 
+        border-color: #ab4493; 
+        border-style: solid; 
+        border-radius: 10px;  
+        width: 420px;   
+        cursor: pointer;
+        color: #fff;
+      }
+             
+      h1{
+        font-size: 39px;  
+        text-align: center; 
+        padding-bottom: 20px; 
+        color: black;
+      }
+      table{
+        margin: 0 auto;
+      }
+ 
+        </style>
+</head>
+<body>
+    <h1>ACCESO DE USUARIO</h1> 
+
+    <form action="login.php" method="post">
+        <p>
+            <label for="usuario" >Usuario </label>
+              <input type="text" class="" name="usuario"  placeholder="Escribe tu usuario">
+        </p>
+        <p>
+            <label for="password" >Contraseña </label>
+              <input type="text" name="password"  placeholder="Escribe tu contraseña">
+        </p>
+
+        <input type="submit" name="enviar" value="Validar">
+        <input type="reset" name="borrar" value="Borrar">
+    </form>
+</body>
+</html>
+
